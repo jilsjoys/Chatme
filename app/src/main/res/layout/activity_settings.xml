@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@color/colorPrimary">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:elevation="3dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="1dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_user_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:padding="14dp"
+        android:layout_below="@+id/set_profile_image"
+        android:inputType="textMultiLine"
+        android:textColorHint="#ffffff"
+        android:hint="          username"
+
+        android:drawableLeft="@drawable/ic_name"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        android:background="@drawable/round_button3"
+
+        ></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_profile_status"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="14dp"
+        android:layout_below="@+id/set_user_name"
+        android:inputType="textMultiLine"
+        android:textColorHint="#ffffff"
+        android:hint="          user status"
+        android:drawableStart="@drawable/ic_status"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/round_button3"
+
+        ></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_phonenumber"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="14dp"
+        android:layout_below="@+id/set_profile_status"
+        android:inputType="textMultiLine"
+        android:hint="       phone number"
+        android:textColorHint="#ffffff"
+        android:drawableStart="@drawable/ic_call"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/round_button3"
+
+        ></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_settings_button"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="70dp"
+        android:padding="10dp"
+        android:text="UPDATE"
+        android:background="@drawable/round_button2"
+        android:layout_below="@+id/set_phonenumber"
+        android:textSize="16dp"
+
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+
+        ></Button>
+
+
+
+</RelativeLayout>

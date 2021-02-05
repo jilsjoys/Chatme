@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bgp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/chatme"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+
+
+                ></ImageView>
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:hint=" mail id"
+                android:textColorHint="#ffffff"
+                android:drawableLeft="@drawable/ic_action_mail"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ffffff"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_action_pass"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:hint=" password"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="370dp"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="             LOGIN             "
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/round_button2"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="450dp"
+
+                />
+
+            <TextView
+                android:id="@+id/need_new_account_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New user? Register"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:layout_marginTop="570dp"></TextView>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

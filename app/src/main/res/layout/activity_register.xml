@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/bgp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/chatme"
+
+        ></ImageView>
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:drawableLeft="@drawable/ic_action_contact"
+        android:ems="10"
+        android:hint=" Name"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:drawableLeft="@drawable/ic_action_mail"
+        android:ems="10"
+        android:hint=" mail id"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:inputType="textEmailAddress"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:hint=" Phone number"
+        android:inputType="phone"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:hint=" password"
+        android:textColor="#ffffff"
+
+        android:inputType="textPassword"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+      android:textColor="#ffffff"
+        android:text="     REGISTER      "
+        android:textSize="17dp"
+        android:background="@drawable/round_button2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/already_have_account_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="570dp"
+        android:textColor="#ffffff"
+        android:text="Already signed in? Login" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

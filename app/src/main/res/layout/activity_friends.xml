@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendsActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/search_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/heading_label"
+        android:layout_below="@+id/heading_label"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/search_btn"
+        android:background="@drawable/search_layout"
+        android:ems="10"
+        android:textColorHint="#C8C3C3"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="My friends"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+
+        android:gravity="center"
+        android:paddingRight="10dp"
+
+        android:textColor="#C8C1C1"
+        android:textSize="20sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contacts_list"
+        android:layout_width="match_parent"
+       android:layout_marginTop="6dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_field"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
